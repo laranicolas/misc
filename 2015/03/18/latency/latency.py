@@ -28,5 +28,4 @@ def request_ok(current, th_min, th_max):
     """
     # change below by fixed implementation, and run
     # make tests
-    random_value = random.uniform(th_min, th_max)
-    return current < random_value
+    return current < random.uniform(th_min, th_max)
