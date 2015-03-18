@@ -26,7 +26,16 @@ def request_ok(current, th_min, th_max):
     e.g. for current in the middle between th_min, th_max
     randomly return TRUE half ot the time
     """
-
     # change below by fixed implementation, and run
     # make tests
+    if current > th_max:
+      return False
+
+    if current < th_min:
+      return True
+
+    random_value = random.uniform(th_min, th_max)
+    if current > random_value:
+      return False
+
     return True
